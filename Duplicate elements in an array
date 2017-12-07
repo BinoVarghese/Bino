@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+main()
+{
+      int i,j,n,a[50];
+      cout<<"Enter the no.of elements";
+      cin>>n;
+      cout<<"Enter the elements";
+      for(i=1;i<=n;i++)
+      {
+          cin>>a[i];
+      }
+      cout<<"Duplicate elements are ";
+      for(i=1;i<=n;i++)
+      {
+        for(j=i+1;j<=n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                cout<<a[j]<<" ";
+            }
+        }
+      }
+}
